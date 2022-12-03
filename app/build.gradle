@@ -5,6 +5,7 @@ plugins {
 android {
     namespace 'com.example.aplikasipenjualan'
     compileSdk 32
+    viewBinding.enabled = true
 
     defaultConfig {
         applicationId "com.example.aplikasipenjualan"
