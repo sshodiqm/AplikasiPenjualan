@@ -15,4 +15,5 @@
     <string name="input_password_confirm">Konfirmasi kata sandi</string>
     <string name="password_not_match">Kata sandi tidak cocok</string>
     <string name="password_match">Kata sandi cocok</string>
+    <string name="account_not_found">Akun tidak ditemukan</string>
 </resources>
