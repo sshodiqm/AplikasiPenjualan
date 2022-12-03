@@ -9,6 +9,6 @@
     <string name="loss_password">Lupa kata sandi</string>
     <string name="login_heading">Selamat datang kembali</string>
     <string name="havent_account">tidak punya akun?</string>
-    <string name="create_account">buat akun</string>
+    <string name="create_account">Buat akun</string>
     <string name="or">atau</string>
 </resources>

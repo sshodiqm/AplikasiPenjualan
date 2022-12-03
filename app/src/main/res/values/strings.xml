@@ -9,7 +9,7 @@
     <string name="loss_password">Loss password</string>
     <string name="login_heading">Welcome back</string>
 
-    <string name="havent_account">don't have account ?</string>
-    <string name="create_account">create account</string>
+    <string name="havent_account">don\'t have account ?</string>
+    <string name="create_account">Create account</string>
     <string name="or">or</string>
 </resources>
