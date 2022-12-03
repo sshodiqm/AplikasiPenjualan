@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">AplikasiPenjualan</string>
+    <string name="app_name" translatable="false">AplikasiPenjualan</string>
+    <string name="login_email">Email address or username</string>
+    <string name="login_email_placeholder">Enter email address or username</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_placeholder">Enter you password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="loss_password">Loss password</string>
+    <string name="login_heading">Welcome back</string>
+
+    <string name="havent_account">don't have account ?</string>
+    <string name="create_account">create account</string>
+    <string name="or">or</string>
 </resources>

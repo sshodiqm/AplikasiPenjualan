@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_email">Alamat email atau nama pengguna</string>
+    <string name="login_email_placeholder">Masukan alamat email atau nama pengguna</string>
+    <string name="login_password">Kata sandi</string>
+    <string name="login_password_placeholder">Masukan kata sandi</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="loss_password">Lupa kata sandi</string>
+    <string name="login_heading">Selamat datang kembali</string>
+    <string name="havent_account">tidak punya akun?</string>
+    <string name="create_account">buat akun</string>
+    <string name="or">atau</string>
+</resources>
