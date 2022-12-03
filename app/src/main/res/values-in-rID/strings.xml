@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="login_email">Alamat email atau nama pengguna</string>
-    <string name="login_email_placeholder">Masukan alamat email atau nama pengguna</string>
-    <string name="login_password">Kata sandi</string>
-    <string name="login_password_placeholder">Masukan kata sandi</string>
     <string name="login">Masuk</string>
     <string name="register">Daftar</string>
     <string name="loss_password">Lupa kata sandi</string>
@@ -11,4 +7,12 @@
     <string name="havent_account">tidak punya akun?</string>
     <string name="create_account">Buat akun</string>
     <string name="or">atau</string>
+    <string name="register_heading">Mulai dengan kami</string>
+    <string name="input_email_hint">Masukan alamat email</string>
+    <string name="input_password_hint">Masukan kata sandi</string>
+    <string name="label_password">Kata sandi</string>
+    <string name="label_email">Alamat email</string>
+    <string name="input_password_confirm">Konfirmasi kata sandi</string>
+    <string name="password_not_match">Kata sandi tidak cocok</string>
+    <string name="password_match">Kata sandi cocok</string>
 </resources>
