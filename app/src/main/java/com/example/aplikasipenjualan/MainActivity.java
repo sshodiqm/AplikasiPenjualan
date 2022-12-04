@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.aplikasipenjualan.Lib.AppDatabase;
+import com.example.aplikasipenjualan.Lib.UserDataRepository;
 import com.example.aplikasipenjualan.ObjectModel.User;
 import com.example.aplikasipenjualan.databinding.ActivityMainBinding;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 
+import kotlin.Result;
 import kotlin.jvm.Throws;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,10 +43,13 @@ public class MainActivity extends AppCompatActivity {
                     String email = binding.email.getText().toString(),
                             pass = binding.password.getText().toString();
                     if (email.length() <= 5) {
+                        Toast.makeText(getApplicationContext(), "Please enter email address", Toast.LENGTH_SHORT).show();
                         return;
                     }
                     if (pass.length() <= 5) {
-
+                        Toast.makeText(getApplicationContext(),
+                                "Please enter password",
+                                Toast.LENGTH_SHORT).show();
                         return;
                     }
 
@@ -73,27 +79,29 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    User user;
     private void LoginHandler(String email, String password) {
-        Thread t = new Thread() {
-            public void run() {
 
-                AppDatabase db = AppDatabase.getInstance(getApplicationContext());
-                user = db.userDao().findByEmail(email);
+        try {
+
+            UserDataRepository repository = new UserDataRepository(getApplicationContext());
+            User user = repository.getByEmail(email);
+
+            if(user == null) {
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.account_not_found), Toast.LENGTH_SHORT).show();
+                return;
             }
-        };
-        t.start();
+            if(! user.password.equals(password)) {
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.password_not_match), Toast.LENGTH_SHORT).show();
+                return;
+            }
 
-        if(user == null) {
-            Toast.makeText(getApplicationContext(), getResources().getString(R.string.account_not_found), Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if(! user.password.equals(password)) {
-            Toast.makeText(getApplicationContext(), getResources().getString(R.string.password_not_match), Toast.LENGTH_SHORT).show();
-            return;
+            startActivity(new Intent(getApplicationContext(), Dashboard.class));
+            MainActivity.this.finish();
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
         }
 
-        startActivity(new Intent(getApplicationContext(), Dashboard.class));
-        MainActivity.this.finish();
     }
 }
