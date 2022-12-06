@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imgBarang"
+        android:src="@drawable/spidol"
+        android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBarang"
+            android:layout_marginLeft="12dp"
+            android:text="Nama Barang"
+            android:textColor="?colorPrimary"
+            android:id="@+id/txtname"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBarang"
+            android:layout_marginLeft="12dp"
+            android:text="Description"
+            android:layout_below="@+id/txtname"
+            android:id="@+id/txtdesc"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBarang"
+            android:layout_marginLeft="12dp"
+            android:text="Price"
+            android:textColor="@color/orange"
+            android:id="@+id/txtprice"
+            android:layout_below="@+id/txtdesc"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            />
+
+</RelativeLayout>
