@@ -16,13 +16,13 @@
             android:padding="10dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
                 <LinearLayout
                     android:paddingBottom="15sp"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:textSize="25sp"
@@ -56,14 +56,6 @@
                         android:id="@+id/email"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/input_email_hint"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,9 +101,9 @@
                     android:layout_height="wrap_content"/>
 
                 <Button
-                    style="@style/btn.white"
                     android:id="@+id/register"
                     android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/register" />
