@@ -25,7 +25,10 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".Register" />
+        
+        <activity android:name=".Register"/>
+        <activity android:name=".Dashboard"/>
+        
     </application>
 
 </manifest>

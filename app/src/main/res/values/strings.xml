@@ -18,4 +18,6 @@
     <string name="havent_account">don\'t have account ?</string>
     <string name="create_account">Create account</string>
     <string name="or">or</string>
+
+    <string name="account_not_found">Account not found</string>
 </resources>
