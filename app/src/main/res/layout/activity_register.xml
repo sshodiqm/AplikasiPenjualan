@@ -109,9 +109,9 @@
                     android:layout_height="wrap_content"/>
 
                 <Button
+                    style="@style/btn.white"
                     android:id="@+id/register"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/rounded"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/register" />
