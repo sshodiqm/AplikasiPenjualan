@@ -31,17 +31,13 @@ public class Adapter extends ArrayAdapter<Product> {
         Product product = getItem(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.item, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.xxx, parent, false);
         }
         TextView title = convertView.findViewById(androidx.fragment.R.id.title),
-                 description = convertView.findViewById(R.id.txtdesc),
-                 price = convertView.findViewById(R.id.txtprice);
-        ImageView image = convertView.findViewById(R.id.imgBarang);
+                 description = convertView.findViewById(R.id.description);
 
         title.setText(product.title);
         description.setText(product.description);
-        price.setText(String.valueOf(product.price));
-
 
         return convertView;
     }
