@@ -19,7 +19,7 @@
             android:layout_marginLeft="12dp"
             android:text="Nama Barang"
             android:textColor="?colorPrimary"
-            android:id="@+id/txtname"
+            android:id="@+id/name"
             android:textSize="14sp"
             android:textStyle="bold"/>
         <TextView
@@ -28,7 +28,7 @@
             android:layout_toRightOf="@+id/imgBarang"
             android:layout_marginLeft="12dp"
             android:text="Description"
-            android:layout_below="@+id/txtname"
+            android:layout_below="@+id/name"
             android:id="@+id/txtdesc"
             android:textSize="12sp"/>
         <TextView

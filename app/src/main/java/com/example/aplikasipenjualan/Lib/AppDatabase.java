@@ -10,7 +10,7 @@ import com.example.aplikasipenjualan.ObjectModel.ProductDao;
 import com.example.aplikasipenjualan.ObjectModel.User;
 import com.example.aplikasipenjualan.ObjectModel.UserDao;
 
-@androidx.room.Database(entities = {User.class, Product.class}, version = 1)
+@androidx.room.Database(entities = {User.class, Product.class}, version = 2)
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract UserDao userDao();
@@ -27,7 +27,7 @@ public abstract class AppDatabase extends RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                                     AppDatabase.class,
-                                    "database").build();
+                                    "database2").build();
                 }
             }
         }

@@ -18,25 +18,6 @@ import java.util.ArrayList;
 import kotlin.jvm.Throws;
 
 public class MainActivity extends AppCompatActivity {
-    RecyclerView rBarang;
-    RecyclerView.Adapter adapter;
-    RecyclerView.LayoutManager layoutManager;
-    ArrayList<Barang> listBarang;
-
-    void dataDummy() {
-        listBarang = new ArrayList<>();
-        listBarang.add(new Barang("Spidol", "Non-permanent Marker", "6000", R.drawable.spidol));
-        listBarang.add(new Barang("Penggaris", "Penggaris Besi 30cm", "5000", R.drawable.penggaris));
-        listBarang.add(new Barang("Tipe-X", "Correction Pen Kenko", "3500", R.drawable.tipex));
-    }
-    void data(){
-        rBarang = findViewById(R.id.reMenu);
-        adapter = new Adapter (this,listBarang);
-        layoutManager = new LinearLayoutManager(this);
-        rBarang.setLayoutManager(layoutManager);
-        rBarang.setAdapter(adapter);
-    }
-
 
     /**
      * _README_
@@ -49,9 +30,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        dataDummy();data();
-
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -96,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        /** DEBUG */
+            startActivity(new Intent(getApplicationContext(), Dashboard.class));
+            MainActivity.this.finish();
+        /** END */
     }
 
     User user;
