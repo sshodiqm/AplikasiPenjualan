@@ -21,4 +21,22 @@ public class Product {
 
     @ColumnInfo(name="date_stamp")
     public String dateStamp;
+
+    @ColumnInfo(name="price")
+    public int price;
+
+
+    /** EMPTY */
+    public Product() {
+
+    }
+    /** WITH PARAMS */
+    public Product(String title, String description, String pathImage, String dateStamp, int price) {
+
+        this.title = title;
+        this.description = description;
+        this.pathImage = pathImage;
+        this.dateStamp = dateStamp;
+        this.price = price;
+    }
 }
